@@ -15,6 +15,8 @@ os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 
+# Print the API key to verify
+print("OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
 
 ##Prompt Template
 prompt = ChatPromptTemplate.from_messages([
@@ -33,3 +35,4 @@ chain = prompt|llm|output_parser
 
 if input_text:
     st.write(chain.invoke({'question': input_text}))
+
