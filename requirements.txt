@@ -3,3 +3,16 @@ langchain_core
 python_dotenv
 streamlit
 langchain_community
+fastapi
+uvicorn 
+langserve
+sse_starlette
+bs4
+pypdf
+chromadb
+faiss-cpu
+arxiv
+wikipedia
+groq
+langchain-groq
+beautifulsoup4
